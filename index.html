@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="input" list="options" class="inputek-ka">
+    <datalist id="options">
+        <option value="what the dog doin"></option>
+        <option value="imbes nagaluto nagalu..."></option>
+        <option value="hala nag lu2 na"></option>
+        <option value="luoya maa'm uyy"></option>
+        <option value="oscarr oscarrr"></option>
+    </datalist>
+
+    <dialog class="dialog_log">
+        THIS IS A DIALOG NIGG-
+        <button onclick="hideDialog()">HIDE THE DIALOG</button>
+    </dialog>
+
+    <button onclick="showDialog()">CLICK TO SEE DIALOG</button>
+
+    <script>
+        const dialog = document.querySelector('.dialog_log');
+
+        function showDialog(){
+            dialog.show();
+        }
+
+        const hideDialog = () => {
+            dialog.close();
+        }
+    </script>
+
+
+</body>
+</html>
